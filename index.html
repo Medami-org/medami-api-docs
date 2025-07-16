@@ -31,7 +31,8 @@
 document.querySelectorAll('.button').forEach(div => {
     div.addEventListener('click', () => {
     const target = div.textContent.trim().toLowerCase();
-    window.location.href = window.location.origin + '/' + target;
+    const baseUrl = window.location.href.split('#')[0].replace(/\/$/, '');
+    window.location.href = baseUrl + '/' + target;
     });
 });
 </script>
