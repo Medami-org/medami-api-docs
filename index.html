@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Favicon setup -->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+
+    <!-- PWA & Apple support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Medami" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    
+    <!--Css setup -->
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medami api docs</title>
+</head>
+<body>
+    <div class="main">
+        <div class="label">Please select the desired documentation environment :</div>
+        <div class="button">Main</div>
+        <div class="button">Staging</div>
+    </div>
+</body>
+<!--Button click navigation -->
+<script>
+document.querySelectorAll('.button').forEach(div => {
+    div.addEventListener('click', () => {
+    const target = div.textContent.trim().toLowerCase();
+    window.location.href = window.location.origin + '/' + target;
+    });
+});
+</script>
+</html>
