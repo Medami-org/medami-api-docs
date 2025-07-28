@@ -1,7 +1,7 @@
 # MedAmi API Documentation
 
 Welcome to the MedAmi API documentation.  
-This RESTful API enables you to integrate intelligent health data collection into your own tools and workflows.
+This API enables you to integrate intelligent health data collection into your own tools and workflows.
 
 ## 🔗 Online Documentation Links
 
